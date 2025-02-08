@@ -11,7 +11,7 @@
 
     &:first-of-type {
         grid-row: span 2;
-        aspect-ratio: 364 / 662;
+        height: 100%;
     }
 
     &:hover {
@@ -19,14 +19,14 @@
     }
 
     &:nth-of-type(1)button {
-        margin-right: 4px;
+        margin-right: clamp(0.5px, 4px, 0.24vw);
     }
 
     &:nth-of-type(3)button,
     &:nth-of-type(4)button,
     &:nth-of-type(6)button,
     &:nth-of-type(7)button {
-        margin-right: 2px;
+        margin-right: clamp(0.5px, 2px, 0.12vw);
     }
 
     /* Top Row - Hover behavior */
@@ -36,12 +36,12 @@
 
     /* Bottom Row - Hover behavior */
     &.border {
-        --card-border-width: 15px;
+        --card-border-width: clamp(6.75px, 15px, 0.9vw); 
         border: var(--card-border-width) solid transparent;
     }
 
     &.border:hover {
-        --card-border-width: 15px;       
+        --card-border-width: clamp(6.75px, 15px, 0.9vw);       
         border: var(--card-border-width) solid #07C06A;
     }
 }

@@ -1,8 +1,7 @@
 .button {
-  width: 85.16%;
-  height: clamp(40px, 21.74vh, 70px);
-  padding: clamp(8px, 1.5vw, 16px);
-  font-size: clamp(12px, 1.5vw, 16px);
+  width: clamp(40px, 310px, 18.46vw);
+  height: clamp(40px, 70px, 4.17vw);
+  padding: clamp(8px, 16px, 0.952381vw);
   border: none;
   color: white;
   display: flex;
@@ -25,13 +24,13 @@
   }
 
   .icon {
-    width: 22px;
-    height: 22px;
-    margin-right: 16px;
+    width: clamp(11px, 22px, 1.31vw);
+    height: clamp(11px, 22px, 1.31vw);
+    margin-right: clamp(8px, 16px, 0.95vw);
   }
 
   .label {
-    font-size: clamp(14px, 1.5vw, 19px);
+    font-size: clamp(10px, 19px, 1.14vw);
     font-weight: 600;
     text-align: start;
 
