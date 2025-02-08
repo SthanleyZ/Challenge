@@ -1,7 +1,6 @@
 .button {
-  width: clamp(40px, 310px, 18.46vw);
-  height: clamp(40px, 70px, 4.17vw);
-  padding: clamp(8px, 16px, 0.952381vw);
+  width: clamp(141.7px, 310px, 18.46vw);
+  height: clamp(32px, 70px, 4.17vw);  
   border: none;
   color: white;
   display: flex;
@@ -11,6 +10,10 @@
   max-width: 310px; 
   border-radius: 70px;
   background-color: #2D3E4E;
+  
+  &.icon-text{
+    padding:clamp(5px, 11px, 0.66vw) clamp(8.67px, 19px, 1.14vw) clamp(5px, 11px, 0.66vw)  clamp(12.36px, 27px, 1.61vw);
+  }
 
   /* Top row button */
   &.top {
@@ -20,19 +23,20 @@
   /* Bottom row button */
   &.bottom {
     position: absolute;
-    top: calc(50px - var(--card-border-width)); /* Subtract border width from 50px */
+    top: clamp(22.88px, 50px, 2.98vw);
   }
 
   .icon {
-    width: clamp(11px, 22px, 1.31vw);
-    height: clamp(11px, 22px, 1.31vw);
-    margin-right: clamp(8px, 16px, 0.95vw);
+    width: clamp(10px, 22px, 1.31vw);
+    height: clamp(10px, 22px, 1.31vw);
+    margin-right: clamp(7.3px, 16px, 0.95vw);
   }
 
   .label {
-    font-size: clamp(10px, 19px, 1.14vw);
+    font-size: clamp(8.75px, 19px, 1.14vw);
     font-weight: 600;
     text-align: start;
+    line-height: clamp(10.98px, 24px, 1.43vw);
 
     &.icon-text {
       @supports (-webkit-line-clamp: 2) {

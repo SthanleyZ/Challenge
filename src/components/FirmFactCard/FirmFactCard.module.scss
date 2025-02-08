@@ -19,14 +19,14 @@
     }
 
     &:nth-of-type(1)button {
-        margin-right: clamp(0.5px, 4px, 0.24vw);
+        margin-right: clamp(1.84px, 4px, 0.24vw);
     }
 
     &:nth-of-type(3)button,
     &:nth-of-type(4)button,
     &:nth-of-type(6)button,
     &:nth-of-type(7)button {
-        margin-right: clamp(0.5px, 2px, 0.12vw);
+        margin-right: clamp(0.92px, 2px, 0.12vw);
     }
 
     /* Top Row - Hover behavior */
@@ -34,14 +34,13 @@
         background-color: #07C06A; // Change card background for top row
     }
 
-    /* Bottom Row - Hover behavior */
+
     &.border {
-        --card-border-width: clamp(6.75px, 15px, 0.9vw); 
-        border: var(--card-border-width) solid transparent;
+        border: clamp(6.91px, 15px, 0.9vw) solid transparent;
     }
 
+    /* Bottom Row - Hover behavior */
     &.border:hover {
-        --card-border-width: clamp(6.75px, 15px, 0.9vw);       
-        border: var(--card-border-width) solid #07C06A;
+        border: clamp(6.91px, 15px, 0.9vw) solid #07C06A;
     }
 }
