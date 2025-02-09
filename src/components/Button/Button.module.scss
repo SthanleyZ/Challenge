@@ -23,7 +23,7 @@
   /* Bottom row button */
   &.bottom {
     position: absolute;
-    top: clamp(22.88px, 50px, 2.98vw);
+    top: clamp(15.97px, 35px, 2.08vw);
   }
 
   .icon {
@@ -37,6 +37,7 @@
     font-weight: 600;
     text-align: start;
     line-height: clamp(10.98px, 24px, 1.43vw);
+    letter-spacing: -0.5px;
 
     &.icon-text {
       @supports (-webkit-line-clamp: 2) {
