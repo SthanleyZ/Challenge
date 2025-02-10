@@ -27,7 +27,7 @@ Navigate to the project directory and install the required dependencies using Ya
 ```bash
 yarn start
 ```
-This will build the project and start a local server. You can view the application in your browser at the providade localhost.
+This will build the project and start a local server. You can view the application in your browser at the provided localhost.
 
 ### 4. **Requirements**
 To run this project, you’ll need the following:
